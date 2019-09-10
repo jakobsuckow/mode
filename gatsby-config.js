@@ -6,6 +6,7 @@ module.exports = {
     author: `@jakobsuckow`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     
     {
       resolve: 'gatsby-source-airtable',
