@@ -6,7 +6,7 @@ let checkBlank = value => (value ? value : `--`)
 
 const Post = () => {
   const item = useStaticQuery(graphql`
-  query MyQuery {
+  query postQuery {
     allAirtable {
       nodes {
         data {
@@ -18,19 +18,11 @@ const Post = () => {
             raw {
               url
             }
-            localFiles {
-              childImageSharp {
-                fluid(background: "#ee757b") {
-                  src
-                  base64
-                }
-              }
-            }
           }
         }
       }
     }
-  }
+}
 
   `)
   return (
