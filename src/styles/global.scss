@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 @import './footer.scss';
 body {
   background-color: #ee757b;
@@ -9,20 +9,18 @@ body {
     padding: 0;
   }
 
-  
-
-  
   .wrapper {
     width: 100%;
     height: 100vh;
+    position: relative;
   }
-  
   
   .post {
     width: 100%;
     height: 100%;
     display: flex;
     margin: 1rem 0;
+    position: relative;
   
   }
   .post:nth-child(even) {
@@ -43,10 +41,9 @@ body {
   }
 
   .post > .text h1 {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Playfair Display', serif;
     font-size: 72px;
-    color: #801f23;
-
+    color: black;
   }
   
   .post > .text p {

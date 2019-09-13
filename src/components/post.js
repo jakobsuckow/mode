@@ -1,7 +1,6 @@
 import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
-import Footer from '../components/footer'
-
+import Footer from './footer'
 let checkBlank = value => (value ? value : `--`)
 
 const Post = () => {
@@ -33,18 +32,19 @@ const Post = () => {
          <div className="text">
          <h1>{node.data.Name}</h1>
          <p>{node.data.Notes}</p>
+         <br />
          <p>Current Price: {checkBlank(node.data.Price)}</p>
          <p style={{display: node.data.Link ? "block" : "none"}}>Available <a href="{node.data.Link}">here</a></p>
          </div>
          <img src={node.data.Attachments.raw[0].url} alt="" />
-       
          
        </div>
+     
      ) 
      )}
-    <Footer />
+   <Footer />  
    </div>
-  
+
   )
 
 

@@ -4,12 +4,10 @@ import SEO from "../components/seo"
 import Post from "../components/post"
 
 
-
 const IndexPage = () => (
-  
   <Layout>
   <SEO title="Home" />
-  <Post/>
+  <Post />
   </Layout>
 )
 
